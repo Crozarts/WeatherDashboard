@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+    <header class="container-fluid text-center text-white header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-md-3 text-white">
+                <h5> Search for a City</h5>
+                <div class="form-inline form-group">
+                    <input class="form-control" type="text" placeholder="Enter City Name" id="search-value" />
+                    <button class="btn btn-success" id="search-button"><i class="fa fa-search"></i></button>
+                </div>
+                <form id="currentCity"></form>
+                <br>
+                    <button class="btn btn-danger" id="clear-button">Clear All   <i class="far fa-trash-alt"></i></button>
+            </aside>
+            <div class="col-md-9" id="today"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <header class="fourHead"></header>
+        <div class="row justify-content-center" id="oneWeek"></div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
