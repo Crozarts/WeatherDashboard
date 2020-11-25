@@ -76,8 +76,8 @@ function fiveDay(searchValue) {
         $(".fiveDayTitle").empty()
         $("#oneWeek").empty()
 
-        var fiveCast = $("<h3>").addClass("fiveDayTitle").text("5-Day Forecast: ")
-        $(".fiveHeader").append(fiveCast);
+        var fiveSlots = $("<h3>").addClass("fiveDayTitle").text("5-Day Forecast: ")
+        $(".fiveHeader").append(fiveSlots);
         for (i = 0; i < 40; i = i + 8) {
             var card = $("<div>").addClass("card ml-3 mb-3 card5");
             var temp = $("<p>").addClass("card-text text5").text("Temperature: " + data.list[i].main.temp + " \u00B0F");
@@ -93,7 +93,7 @@ function fiveDay(searchValue) {
 
             cardBody.append(forecastDate, icon, temp, humid);
             card.append(cardBody);
-            $("#oneWeek").append(card);
+            $("#5day").append(card);
         }
     });
 }
