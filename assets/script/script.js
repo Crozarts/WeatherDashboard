@@ -15,6 +15,7 @@ let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 $("#clear-button").on("click", function () {
     searchHistory = [];
     renderSearchHistory();
+    localStorage = [];
 });
 
 function searchWeather(searchValue) {
